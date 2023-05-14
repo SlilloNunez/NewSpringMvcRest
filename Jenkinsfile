@@ -37,8 +37,8 @@ pipeline {
                             nexusUrl: "localhost:8081",
                             groupId: pom.groupId,
                             version: pom.version,
-                            repository: "Repositorio1",
-                            credentialsId: "NexusCredentials",
+                            repository: "maven-pipeline",
+                            credentialsId: "123",
                             artifacts: [
                                 [artifactId: pom.artifactId,
                                         classifier: '',
