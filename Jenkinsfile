@@ -38,7 +38,7 @@ pipeline {
                             groupId: pom.groupId,
                             version: pom.version,
                             repository: "maven-pipeline",
-                            credentialsId: "123",
+                            credentialsId: "nexus",
                             artifacts: [
                                 [artifactId: pom.artifactId,
                                         classifier: '',
