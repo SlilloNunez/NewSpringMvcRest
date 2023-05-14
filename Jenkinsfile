@@ -8,14 +8,14 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn -B package'
+                bat 'start cmd /c mvn -B package'
             
             }
         }
             
         stage('Test') {
             steps {
-                 sh "mvn clean verify" 
+                bat 'start cmd /c mvn clean verify'
             
             }
         }
