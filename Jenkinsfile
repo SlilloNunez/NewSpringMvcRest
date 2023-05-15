@@ -34,7 +34,7 @@ pipeline {
              environment {
 
 
-                SCANNER_HOME = tool 'SONARQUBE-HOME'
+                SCANNER_HOME = tool 'SonarQube'
 
 
             }
