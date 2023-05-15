@@ -46,7 +46,7 @@ pipeline {
               withSonarQubeEnv(credentialsId: 'sonar', installationName: 'SonarQube') {
 
 
-              sh '''$SCANNER_HOME/bin/sonar-scanner \
+              bat '''start cmd /c $SCANNER_HOME/bin/sonar-scanner \
 
 
               -Dsonar.projectKey=projectKey \
