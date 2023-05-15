@@ -23,7 +23,7 @@ pipeline {
     
     post {
        success {
-           slackSend (channel: '#fundamentos-de-devops', color: '#6EAB00', message: 'Funcionó (<${env.BUILD_URL}|Open>)')
+           slackSend (channel: '#fundamentos-de-devops', color: '#6EAB00', message: 'Funciono')
       }
    } 
 }
