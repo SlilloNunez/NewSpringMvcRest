@@ -193,7 +193,7 @@ pipeline {
         failure{
 
 
-            slackSend( channel: "#actividad-grupal-modulo-3", token: "slack_webhook token", color: "good", message: "${custom_msg()}")
+            slackSend( channel: "#actividad-grupal-modulo-3", color: "good", message: "${custom_msg()}")
 
 
         }
