@@ -13,7 +13,7 @@ pipeline {
             steps {
 
 
-                sh 'mvn -B package'
+               bat 'start cmd /c mvn -B package'
 
 
            
