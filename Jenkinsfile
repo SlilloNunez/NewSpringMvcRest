@@ -22,6 +22,8 @@ pipeline {
     }
     
     post {
-         slackSend channel: '#fundamentos-de-devops', color: '#6EAB00', message: 'Funcionó ', teamDomain: 'sustantivagrupo', tokenCredentialId: 'fg5Q9ww12kqOpcgRHmsGotbH', username: 'Sebastián Lillo Nuñez'
+       success {
+             slackSend channel: '#fundamentos-de-devops', color: '#6EAB00', message: 'Funcionó ', teamDomain: 'sustantivagrupo', tokenCredentialId: 'SecretSlack', username: 'Sebastián Lillo Nuñez'
+      }
    } 
 }
