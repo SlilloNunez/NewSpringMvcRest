@@ -49,22 +49,22 @@ pipeline {
               bat '''start cmd /c $SCANNER_HOME/bin/sonar-scanner \
 
 
-              -Dsonar.projectKey=projectKey \
+              start cmd /c -Dsonar.projectKey=projectKey \
 
 
-            -Dsonar.projectName=projectName \
+            start cmd /c -Dsonar.projectName=projectName \
 
 
-               -Dsonar.sources=src/ \
+               start cmd /c -Dsonar.sources=src/ \
 
 
-               -Dsonar.java.binaries=target/classes/ \
+               start cmd /c -Dsonar.java.binaries=target/classes/ \
 
 
-            -Dsonar.exclusions=src/test/java/****/*.java \
+            start cmd /c -Dsonar.exclusions=src/test/java/****/*.java \
 
 
-             -Dsonar.projectVersion=${BUILD_NUMBER}-${GIT_COMMIT_SHORT}'''
+             start cmd /c -Dsonar.projectVersion=${BUILD_NUMBER}-${GIT_COMMIT_SHORT}'''
 
 
              }
